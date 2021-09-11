@@ -1,0 +1,92 @@
+<html lang="en">
+
+<header>
+  <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic Tac Toe</title>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css'>
+
+
+      <link rel="stylesheet" href="human-human.css">
+
+
+</head>
+<body>
+  <section>
+  <h1>Tic Tac Toe</h1>
+  <div id="main">
+  <div id="content">
+      <div class="body">
+      <div class="circle"></div>
+      <div class="rectangle"></div>
+      <div class="oval">
+        <div class="oval1"></div>
+        <div class="oval2"></div>
+      </div>
+    </div>
+    <div class="leg">
+    <div class="leg1"></div>
+    <div class="leg2"></div>
+    </div>
+    <div class="tic"><h2>TIC</h2></div>
+    </div>
+    <div id="content1">
+        <div class="body">
+        <div class="circle1"></div>
+        <div class="rectangle1"></div>
+        <div class="ovals">
+          <div class="oval3"></div>
+          <div class="oval4"></div>
+        </div>
+      </div>
+      <div class="legs">
+      <div class="leg3"></div>
+      <div class="leg4"></div>
+      </div>
+      <div class="tac"><h2>TAC</h2></div>
+      </div>
+</div>
+<div class="container-fluid">
+  <div class="loader">
+    <div class="box"></div>
+    <div class="hill"></div>
+  </div>
+<div class="row" >
+  <div class="col-xs-4 cell" id="0">
+  </div>
+  <div class="col-xs-4 cell" id="1">
+  </div>
+  <div class="col-xs-4 cell" id="2">
+  </div>
+</div>
+  <div class="row">
+<div class="col-xs-4 cell" id="3">
+</div>
+<div class="col-xs-4 cell" id="4">
+</div>
+<div class="col-xs-4 cell" id="5">
+</div>
+  </div>
+  <div class="row">
+<div class="col-xs-4 cell" id="6">
+</div>
+<div class="col-xs-4 cell" id="7">
+</div>
+<div class="col-xs-4 cell" id="8">
+</div>
+  </div>
+
+</div>
+<div class="endgame">
+      <div class="text"></div>
+      <button onclick="TicTacToeGame()" id="replayBtn">Reset</button>
+    </div>
+    <div class="message">
+          <div class="text"></div>
+        </div>
+<script src="without hints.js"></script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+.cell{
+  display: inline-block;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	background-color: #69D2E7;
+	border: none;
+	border-radius: 10%;
+	box-shadow: 0 .03em .08em rgba(0,0,0, 0.5);
+	margin: 8px;
+	transition: background-color 0.2s ease;
+}
+.cell:hover{
+  background-color:#FA6900;
+}
+.col-xs-4{
+  width:100px;
+  height:100px;
+  font-size: 100px;
+  float: left;
+  text-align: center;
+  color:black;
+  cursor: pointer;
+}
+#main{
+  min-height: 100%;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+}
+
+body {
+  background-color:  #E0E4CC;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  position: relative;
+  top:25px;
+}
+h1{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+.endgame {
+  display: none;
+  width: 200px;
+  height: 130px;
+  bottom: 1px;
+  position: absolute;
+  left: 50%;
+  top:65%;
+  margin-left: -100px;
+  padding-top: 10px;
+  padding-bottom:10px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.5em;
+  border-radius: 5px;
+  border-color:solid black;
+  color: black;
+}
+#replayBtn {
+  padding: 6px 12px;
+  background-color: #228b22;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.5em;
+  transition: 0.3s;
+}
+
+#replayBtn:hover {
+  background-color: #006400;
+}
+.loader{
+		  position: absolute;
+		  top:35%;
+		  left:22%;
+		  width:12em;
+		  height:6em;
+		}
+
+		.hill{
+			position: absolute;
+		    width: 50em;
+		    height: 0.3em;
+		    left: 0%;
+		    bottom: 50%;
+		    background: black;
+        cursor: pointer;
+		    transform: rotate(140deg);
+		   	animation: seesaw 4s linear infinite;
+		}
+
+    #content {
+      margin: 40px auto;
+      text-align: center;
+      width: 600px;
+      position: absolute;
+      left:25%;
+      top:14%;
+      animation: man 4s linear infinite;
+    }
+    .circle {
+      width: 20px;
+      height: 25px;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      text-align: center;
+      color: white;
+      margin: 2px ;
+      position: relative;
+      left:2.5px;
+      top:2px;
+      background-color: black;
+    }
+    .rectangle{
+      height: 50px;
+      width: 20px;
+      margin: 5px ;
+      background-color: black;
+      text-align: center;
+      float: left;
+    }
+
+    .oval1{
+      width:7px;
+      height:50px;
+      margin:1px;
+      float: left;
+      position: relative;
+      background-color: black;
+      border-radius:50%;
+    }
+    .oval2{
+      width:7px;
+      height:50px;
+      margin:1px;
+      position: relative;
+      left:-10px;
+      background-color: black;
+      border-radius:50%;
+    }
+    .leg1{
+      height: 50px;
+      width: 7.5px;
+      margin: 2px ;
+      position: relative;
+      top:7.5px;
+      left:2.5px;
+      background-color: black;
+      text-align: center;
+    }
+    .leg2{
+      height: 50px;
+      width: 7.5px;
+      margin: 2.5px ;
+      position: relative;
+      left: 15px;
+      top:-45px;
+      background-color: black;
+      text-align: center;
+    }
+    @keyframes man{
+      0%{
+          transform: rotate(-20deg)
+        }
+      10%{
+        transform: rotate(-10deg)
+      }
+      20%{
+        transform:rotate(0deg)
+      }
+      30%{
+        transform:rotate(10deg)
+      }
+      40%{
+        transform:rotate(10deg)
+      }
+      50%{
+        transform:rotate(10deg);
+      }
+      60%{
+        transform:rotate(10deg);
+      }
+      70%{
+        transform:rotate(10deg);
+      }
+      80%{
+        transform:rotate(0deg);
+      }
+      90%{
+        transform:rotate(-10deg);
+      }
+      100%{
+        transform:rotate(-20deg);
+      }
+    }
+    @keyframes seesaw{
+      0%{
+          transform: rotate(-20deg)
+        }
+      10%{
+        transform: rotate(-10deg)
+      }
+      20%{
+        transform:rotate(0deg)
+      }
+      30%{
+        transform:rotate(10deg)
+      }
+      40%{
+        transform:rotate(10deg)
+      }
+      50%{
+        transform:rotate(10deg);
+      }
+      60%{
+        transform:rotate(10deg);
+      }
+      70%{
+        transform:rotate(10deg);
+      }
+      80%{
+        transform:rotate(0deg);
+      }
+      90%{
+        transform:rotate(-10deg);
+      }
+      100%{
+        transform:rotate(-20deg);
+      }
+    }
+    #content1 {
+      margin: 40px auto;
+      text-align: center;
+      width: 600px;
+      animation: man1 4s linear infinite;
+      position: absolute;
+      left:28%;
+      top:10%;
+    }
+    .circle1 {
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      color: white;
+      margin: 2px ;
+      position: relative;
+      left:-3px;
+      top:140px;
+      background-color: black;
+    }
+    .rectangle1{
+      height: 50px;
+      width: 70px;
+      margin: 5px ;
+      background-color: black;
+      text-align: center;
+      float: left;
+      position: relative;
+      top: 53px;
+      left:-25px;
+    }
+    .leg3{
+      height: 50px;
+      width: 15px;
+      margin: 2px ;
+      position: relative;
+      top: 11px;
+      left:-4px;
+      background-color: black;
+      text-align: center;
+    }
+    .leg4{
+      height: 50px;
+      width: 15px;
+      margin: 5px ;
+      position: relative;
+      left: 15px;
+      top:-44px;
+      background-color: black;
+      text-align: center;
+    }
+    .rect{
+      height: 30px;
+      width: 50px;
+      margin: 5px ;
+      background-color: black;
+      text-align: center;
+      float: left;
+      position: relative;
+      top: -77px;
+      left:-15px;
+    }
+    @keyframes man1{
+      0%{
+          transform: rotate(160deg)
+        }
+      10%{
+        transform: rotate(171deg)
+      }
+      20%{
+        transform:rotate(182deg)
+      }
+      30%{
+        transform:rotate(192.5deg)
+      }
+      40%{
+        transform:rotate(192.5deg)
+      }
+      50%{
+        transform:rotate(192.5deg);
+      }
+      60%{
+        transform:rotate(192.5deg);
+      }
+      70%{
+        transform:rotate(192.5deg);
+      }
+      80%{
+        transform:rotate(182deg);
+      }
+      90%{
+        transform:rotate(171deg);
+      }
+      100%{
+        transform:rotate(160deg);
+      }
+    }
+.tic{
+  position: relative;
+  left:-285px;
+  top:-250px;
+  font-family: 'Montserrat', sans-serif;
+}
+.tac{
+  position: relative;
+  left:-260px;
+  top:40px;
+  font-family: 'Montserrat', sans-serif;
+  transform: rotate(180deg);
+}
+@keyframes react{
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+@keyframes react1{
+  backgroundColor:black;
+}
+@keyframes react2{
+  from {background-color: green;}
+  to {background-color: yellow;}
+}
